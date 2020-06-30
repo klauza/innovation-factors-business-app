@@ -47,6 +47,5 @@
   },
   "devDependencies": {
     "@svgr/cli": "^5.4.0"
-  },
-  "proxy": "http://localhost:5000"
+  }
 }

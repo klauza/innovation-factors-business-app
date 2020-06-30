@@ -1,3 +1,11 @@
-# Info
+# CLIENT
 
-**This is blog. A project which is about to become something.**
+### features
+
+- light/dark theme
+- global css variables
+- contact form
+- newsletter
+- page transitions
+- SEO
+- breadcrumbs

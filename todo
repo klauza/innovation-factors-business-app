@@ -1,7 +1,0 @@
-@client
- - Home featured articles - add 3d hover effect and add lazy load (youtube style) - reusable
- - intersection observer for propagated articles & Home
- - react-transition-grp for navigation's articles anchor
-
-@server
- - refactor mail & captcha into different components
