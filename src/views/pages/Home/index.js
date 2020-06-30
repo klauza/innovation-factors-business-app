@@ -6,12 +6,17 @@ import { Helmet } from 'react-helmet';
 // content
 import Hero from './Hero';
 import ContactForm from '../../../containers/ContactForm';
+import IconSection from './IconSection';
 
+// data
+import home_icons from '../../../data/homeIcons';
 
 // css
 import { Wrapper } from './HomeCSS';
 
 const Home = () => {
+
+  console.log(home_icons)
   return (
     <>
       <Helmet>
@@ -36,7 +41,23 @@ const Home = () => {
 
       <Wrapper className="page">
         <Hero />
-        {/* <ContactForm /> */}
+
+        <button className="hero-arrow">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" stroke="green" strokeWidth="4" fill="yellow" />
+            Sorry, your browser does not support inline SVG.
+          </svg>  
+        </button>
+
+        <div className="insight">
+          <h1>Insights into your innovation factors</h1>
+          <p>Gather structured data from your people to drive improvements in the organisation's innovation capacity.</p>
+        </div>
+        
+        <div className="sections">
+          {home_icons.map((sec, i) => <IconSection key={i} section={sec} />)}
+        </div>
+      
       </Wrapper>
     </>
   )

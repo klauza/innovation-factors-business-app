@@ -8,3 +8,6 @@ export { default as iconlabour } from './icon_labour.png'
 export { default as iconlock } from './icon_lock.png'
 export { default as iconpc } from './icon_pc.png'
 export { default as iconplan } from './icon_plan.png'
+
+export { default as heroimgopt } from './hero_img_optimized.jpg'
+export { default as heroimg } from './hero_img.jpg'

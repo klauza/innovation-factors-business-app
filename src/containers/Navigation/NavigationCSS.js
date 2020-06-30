@@ -36,7 +36,7 @@ export const Wrapper = styled.div`
       display: flex;
       align-items: center;
 
-      .nav-pc-links{
+      .nav-pc-links a{
         display: none;
         font-family: Verdana;
       }
@@ -72,6 +72,9 @@ export const Wrapper = styled.div`
 
 
         .nav-pc-links{
+          a{
+            display: flex;
+          }
           display: flex;
           flex-direction: row;
           justify-items: space-between;
