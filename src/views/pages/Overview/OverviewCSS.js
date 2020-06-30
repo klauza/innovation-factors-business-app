@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    justify-items: center;
+    // justify-content: center;
 
     .tabs{
       display: flex;
