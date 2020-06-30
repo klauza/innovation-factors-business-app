@@ -1,1 +1,10 @@
-export { default as cookingCategory } from './cooking.jpeg'
+
+export { default as logo} from './logo.png'
+export { default as iconbowarrow} from './icon_bowarrow.png'
+export { default as iconbraincogs } from './icon_braincogs.png'
+export { default as iconcontact} from './icon_contact.png'
+export { default as icongraph } from './icon_graph.png'
+export { default as iconlabour } from './icon_labour.png'
+export { default as iconlock } from './icon_lock.png'
+export { default as iconpc } from './icon_pc.png'
+export { default as iconplan } from './icon_plan.png'

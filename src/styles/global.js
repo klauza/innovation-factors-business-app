@@ -29,25 +29,25 @@ export default createGlobalStyle`
 
   
   .views-container{
-    position: relative;
-    left: 0px;
-    min-height: 100vh;
+    // position: relative;
+    // left: 0px;
+    // min-height: 100vh;
     width: 100%;
     margin: 0 auto;
     @media ${props => props.theme.device.tablet} {
       padding: 0px;
     }
     @media ${props => props.theme.device.laptop} {
-      left: 50px;
-      transform: translate(-25px);
-      width: calc(100% - 50px);
+      // left: 50px;
+      // transform: translate(-25px);
+      // width: calc(100% - 50px);
     }
 
   }
 
   .page{
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    // position: absolute;
+    // top: 0; left: 0; right: 0; bottom: 0;
   }
   
   // enter 300ms, exit 150ms
