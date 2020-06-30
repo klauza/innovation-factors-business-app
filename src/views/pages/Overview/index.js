@@ -1,12 +1,61 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // SEO
 import { Helmet } from 'react-helmet';
+
+// tabs
+import InnovationCapacity from './tabs/InnovationCapacity';
+import Stages from './tabs/Stages';
+import Groupsets from './tabs/Groupsets';
+import Comments from './tabs/Comments';
+import IndividualInnovationFactors from './tabs/IndividualInnovationFactors';
+import ImprovementResources from './tabs/ImprovementResources';
 
 // css
 import { Wrapper } from './OverviewCSS';
 
 const Overview = () => {
+
+  const [tab, setTab] = useState(0);
+
+  const tabs = [
+    {
+      title: "Innovation Capacity",
+      content: <InnovationCapacity />,
+      id: 0
+    }, 
+    {
+      title: "Stages",
+      content: <Stages />,
+      id: 1
+    }, 
+    {
+      title: "Groupsets",
+      content: <Groupsets />,
+      id: 2
+    },
+    {
+      title: "Comments",
+      content: <Comments />,
+      id: 3
+    },
+    {
+      title: "Individual Innovation Factors",
+      content: <IndividualInnovationFactors />,
+      id: 4
+    },
+    {
+      title: "Improvement Resources",
+      content: <ImprovementResources />,
+      id: 5
+    }
+
+  ]
+
+  const handleChangeTab = (id) => {
+    setTab(id);
+  }
+
   return (
     <>
       <Helmet>
@@ -31,7 +80,17 @@ const Overview = () => {
 
       <Wrapper className="page">
 
-        <h1>Overview</h1>
+        <div className="overview-grid">
+          <div className="tabs">
+            {tabs.map((item, i)=>(
+              <button className={`${tab === item.id ? 'tab-active' : null}`} onClick={()=>{handleChangeTab(item.id)}}><div className="pillar"/><span>{item.title}</span></button>
+              ))}
+          </div>
+
+          <div className="content">
+            {tabs[tab].content}
+          </div>
+        </div>
 
       </Wrapper>
     </>

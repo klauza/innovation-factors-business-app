@@ -7,7 +7,7 @@ export default {
 
   colors: {
     primary: '#1b75bb', // blue
-    secondary: "#0000ff",
+    secondary: "#21aae1", // lightblue
 
     background: '#fff',
     text: '#000'
