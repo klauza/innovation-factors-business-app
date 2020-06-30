@@ -1,25 +1,18 @@
-import React, { useRef, useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 
-// other
-import Switch from 'react-switch';
-import { useSpring, animated } from 'react-spring';
-
 // media & css
-import { ThemeContext } from 'styled-components';
-import { HomeIcon } from '../../media/Icons';
+// import { ThemeContext } from 'styled-components';
 import { logo } from '../../media/Images';
 import { Wrapper } from './NavigationCSS';
 
 import Modal from './Modal';
 
-// import history from '../../views/history';
-
 // ---
 const Navigation = ({location}) => {
 
 
-  const { text, colors, title } = useContext(ThemeContext);
+  // const { text, colors, title } = useContext(ThemeContext);
 
   // modal
   const [open, setOpen] = React.useState(false);

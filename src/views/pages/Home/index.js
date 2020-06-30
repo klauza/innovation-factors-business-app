@@ -8,7 +8,6 @@ import { handleClick } from '../../../utils/scrollIntoViewClick';
 
 // content
 import Hero from './Hero';
-import ContactForm from '../../../containers/ContactForm';
 import IconSection from './IconSection';
 import Contact from '../Contact'
 import Plans from '../Plans'

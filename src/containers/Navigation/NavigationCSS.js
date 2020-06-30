@@ -80,16 +80,14 @@ export const Wrapper = styled.div`
 
     .nav-container{
 
-      &__logo{
+      // &__logo{
 
-        img{
+      //   img{
 
-        }
-      }
+      //   }
+      // }
 
       &__links{
-
-
 
         .nav-pc-links{
           a{
@@ -114,9 +112,9 @@ export const Wrapper = styled.div`
           display: none;
         }
 
-        a{
+        // a{
 
-        }
+        // }
       }
     }
   }

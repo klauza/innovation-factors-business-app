@@ -3,12 +3,8 @@ import React from 'react';
 // SEO
 import { Helmet } from 'react-helmet';
 
-// content
-import ContactForm from '../../../containers/ContactForm';
-
 // media
 import { iconcontact } from '../../../media/Images';
-
 
 // css
 import { Wrapper } from './ContactCSS';

@@ -1,10 +1,7 @@
-import React, {useRef} from 'react';
+import React from 'react';
 
 import history from './history';
 import { Router, Route,  Switch } from 'react-router-dom';
-
-// animations
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -16,10 +13,6 @@ import NotFound from './pages/NotFound';
 
 // containers
 import Navigation from '../containers/Navigation';
-// import ContactForm from '../containers/ContactForm';
-
-
-
 
 const Main = ( { toggleTheme }) => {
 
