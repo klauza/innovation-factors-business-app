@@ -3,6 +3,8 @@ import React from 'react';
 // SEO
 import { Helmet } from 'react-helmet';
 
+// media
+import { iconplan } from '../../../media/Images';
 
 // css
 import { Wrapper } from './PlansCSS';
@@ -31,6 +33,9 @@ const Plans = () => {
       </Helmet>
 
       <Wrapper className="page">
+        <div className="section-image">
+          <img src={iconplan} alt="" />
+        </div>
         <h1>Plans</h1>
       </Wrapper>
     </>

@@ -16,6 +16,7 @@ export default createGlobalStyle`
     transition: color .5s ease;
   }
   html{
+      scroll-behavior: smooth;
     // height: 100%;
   }
   body, #root{
@@ -27,6 +28,45 @@ export default createGlobalStyle`
     overflow-y: scroll;
   }
   
+
+  // mobile navigation modal
+  .MuiPaper-root{
+    min-width: 400px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .modal-links{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a{
+        text-decoration: none;
+        font-size: 2em;
+        color: #000;
+      }
+    }
+
+    button{
+      width: 100px;
+      height: 50px;
+      outline: none;
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      svg{
+        width: 100%;
+        height: 100%;
+      }        
+      &:hover svg{
+        fill: grey;
+      }
+
+    }
+  }
 
   
   .views-container{

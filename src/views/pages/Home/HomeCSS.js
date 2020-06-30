@@ -79,6 +79,7 @@ export const HeroContainer = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
   
 
   background: #fff;
@@ -90,16 +91,36 @@ export const Wrapper = styled.div`
   // }
 
   .hero-arrow{
-    width: 35px; height: 35px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    
+    margin: 0px auto 75px;
+    border: 0;
+    background: none;
+    outline: none;
+    width: 30px; height: 50px;
     display: block;
-    margin: 15px auto 75px;
+    cursor: pointer;
 
     svg{
       width: 100%; height: 100%;
+      &:nth-child(2){
+        margin-top: -30px;
+      }
+    }
+
+    &:hover svg{
+      fill: grey;
     }
   }
 
   .insight{
+    scroll-snap-align: start;
     max-width: 500px;
     margin: 50px auto 200px;
     h1{
@@ -115,7 +136,7 @@ export const Wrapper = styled.div`
 
   .sections{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 125px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 
@@ -133,7 +154,7 @@ export const Wrapper = styled.div`
 
 
 export const Section = styled.div`
-padding: 0 15px;
+  padding: 0 15px;
 
   display: flex;
   flex-direction: column;
@@ -152,7 +173,7 @@ padding: 0 15px;
 
   .section-title{
     text-align: center;
-    color: ${props => props.theme.colors.primary}
+    color: ${props => props.theme.colors.primary};
   }
   .section-desc{
     color: grey;

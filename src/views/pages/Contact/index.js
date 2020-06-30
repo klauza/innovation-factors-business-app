@@ -6,6 +6,9 @@ import { Helmet } from 'react-helmet';
 // content
 import ContactForm from '../../../containers/ContactForm';
 
+// media
+import { iconcontact } from '../../../media/Images';
+
 
 // css
 import { Wrapper } from './ContactCSS';
@@ -34,7 +37,12 @@ const Contact = () => {
       </Helmet>
 
       <Wrapper className="page">
+
+        <div className="section-image">
+          <img src={iconcontact} alt="" />
+        </div>
         <h1>Contact</h1>
+
       </Wrapper>
     </>
   )

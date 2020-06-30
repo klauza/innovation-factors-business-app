@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
 import history from './history';
 import { Router, Route,  Switch } from 'react-router-dom';
@@ -22,6 +22,8 @@ import Navigation from '../containers/Navigation';
 
 
 const Main = ( { toggleTheme }) => {
+
+
 
   return (
 

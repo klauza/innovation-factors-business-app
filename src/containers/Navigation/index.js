@@ -46,7 +46,7 @@ const Navigation = ({location}) => {
       <div className="nav-container__links">
 
         <div className="nav-pc-links">
-          {location === "/" && <span>WHY INNOVATION FACTORS?</span>}
+          {location === "/" && <span><a href="#insight">WHY INNOVATION FACTORS?</a></span>}
           <NavLink to="/overview">OVERVIEW</NavLink>
           <NavLink to="/plans">PLANS</NavLink>
           <NavLink to="/contact">CONTACT</NavLink>
@@ -54,10 +54,24 @@ const Navigation = ({location}) => {
         </div>
 
         <button onClick={()=> { handleClickOpen()} }> 
-          <svg width="100" height="100" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="40" stroke="green" strokeWidth="4" fill="yellow" />
-            Sorry, your browser does not support inline SVG.
-          </svg> 
+          <svg viewBox="0 0 512 512" width="512" height="512">
+            <g>
+              <g>
+                <path d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z"/>
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z"/>
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20
+                  C512,404.954,503.046,396,492,396z"/>
+              </g>
+            </g>
+          </svg>
         </button>
       </div>
     </div>

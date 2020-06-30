@@ -36,16 +36,36 @@ export const Wrapper = styled.div`
       display: flex;
       align-items: center;
 
-      .nav-pc-links a{
-        display: none;
-        font-family: Verdana;
+      .nav-pc-links {
+        span{
+          display: flex;
+          text-align: center;
+          text-decoration: none;
+        }
+        span > a{
+          text-decoration: none;
+          color: grey;
+        }
+      
+        & > a{
+          display: none;
+          font-family: Verdana;
+        }
       }
+      
 
       button{
         width: 35px; height: 35px;
+        outline: none;
+        border: none;
+        background: none;
+        cursor: pointer;
 
         svg{
           width: 100%; height: 100%;
+        }
+        &:hover svg{
+          fill: grey;
         }
       }
 
@@ -73,7 +93,15 @@ export const Wrapper = styled.div`
 
         .nav-pc-links{
           a{
+            text-decoration: none;
             display: flex;
+            color: grey;
+            &.active{
+              color: #000;
+            }
+            &:hover{
+              color: #000;
+            }
           }
           display: flex;
           flex-direction: row;
