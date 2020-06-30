@@ -83,7 +83,7 @@ const Overview = () => {
         <div className="overview-grid">
           <div className="tabs">
             {tabs.map((item, i)=>(
-              <button className={`${tab === item.id ? 'tab-active' : null}`} onClick={()=>{handleChangeTab(item.id)}}><div className="pillar"/><span>{item.title}</span></button>
+              <button key={i} className={`${tab === item.id ? 'tab-active' : null}`} onClick={()=>{handleChangeTab(item.id)}}><div className="pillar"/><span>{item.title}</span></button>
               ))}
           </div>
 

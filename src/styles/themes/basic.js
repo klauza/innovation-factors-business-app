@@ -3,7 +3,7 @@ import { device } from '../device';
 
 export default {
   device,
-  title: 'light',
+  title: 'basic',
 
   colors: {
     primary: '#1b75bb', // blue
