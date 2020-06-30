@@ -3,16 +3,15 @@ import React from 'react';
 // SEO
 import { Helmet } from 'react-helmet';
 
-
 // css
-import { Wrapper } from './LoginCSS';
+import { Wrapper } from './OverviewCSS';
 
-const LogIn = () => {
+const Overview = () => {
   return (
     <>
       <Helmet>
-        <title>Innovation Factors - LogIn</title>
-        <meta name="description" content="Welcome to login page" />
+        <title>Innovation Factors - Overview</title>
+        <meta name="description" content="Welcome to overview page" />
         <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href={window.location.href} />
         <meta property="og:locale" content="en_GB" />
@@ -31,10 +30,12 @@ const LogIn = () => {
       </Helmet>
 
       <Wrapper className="page">
-        <h1>Log In</h1>
+
+        <h1>Overview</h1>
+
       </Wrapper>
     </>
   )
 }
 
-export default LogIn
+export default Overview

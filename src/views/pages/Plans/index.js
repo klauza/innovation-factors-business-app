@@ -3,17 +3,15 @@ import React from 'react';
 // SEO
 import { Helmet } from 'react-helmet';
 
-// media
-import { iconplan } from '../../../media/Images';
 
-// css
-import { Wrapper } from './PlansCSS';
+// data
+import PlansContent from './PlansContent';
 
 const Plans = () => {
   return (
     <>
       <Helmet>
-        <title>Plans</title>
+        <title>Innovation Factors - Plans</title>
         <meta name="description" content="Welcome to Plans page" />
         <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href={window.location.href} />
@@ -32,12 +30,7 @@ const Plans = () => {
         <meta name="twitter:image" content={`https://images.pexels.com/photos/34123/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`} />
       </Helmet>
 
-      <Wrapper className="page">
-        <div className="section-image">
-          <img src={iconplan} alt="" />
-        </div>
-        <h1>Plans</h1>
-      </Wrapper>
+        <PlansContent />
     </>
   )
 }

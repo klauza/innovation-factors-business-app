@@ -18,6 +18,7 @@ export const HeroContainer = styled.div`
     grid-template-columns: 1fr;
     align-items: center;
     align-self: center;
+    padding: 0 10px;
 
     &__left{
       max-width: 500px;

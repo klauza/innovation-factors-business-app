@@ -51,6 +51,14 @@ export const Wrapper = styled.div`
           display: none;
           font-family: Verdana;
         }
+
+        .home-link{
+          display: block;
+          margin-right: 50px;
+          svg{
+            width: 25px; height: 25px;
+          }
+        }
       }
       
 
@@ -106,6 +114,10 @@ export const Wrapper = styled.div`
           justify-items: space-between;
           align-items: center;
           font-family: ${props => props.theme.colors.nav_font_family};
+
+          .home-link{
+            margin-right: 25px;
+          }
         }
         
         button{

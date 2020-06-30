@@ -3,17 +3,15 @@ import React from 'react';
 // SEO
 import { Helmet } from 'react-helmet';
 
-// media
-import { iconcontact } from '../../../media/Images';
+// content
+import ContactContent from './ContactContent';
 
-// css
-import { Wrapper } from './ContactCSS';
 
 const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact</title>
+        <title>Innovation Factors - Contact</title>
         <meta name="description" content="Welcome to contact page" />
         <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href={window.location.href} />
@@ -32,14 +30,7 @@ const Contact = () => {
         <meta name="twitter:image" content={`https://images.pexels.com/photos/34123/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`} />
       </Helmet>
 
-      <Wrapper className="page">
-
-        <div className="section-image">
-          <img src={iconcontact} alt="" />
-        </div>
-        <h1>Contact</h1>
-
-      </Wrapper>
+      <ContactContent/>
     </>
   )
 }
