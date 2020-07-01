@@ -3,15 +3,26 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
 
   .overview-grid{
-    margin-top: 100px;
+    max-width: 1440px;
+    // margin-top: 100px;
+    margin: 100px auto 0;
     display: grid;
     grid-template-columns: 1fr 3fr;
     // justify-content: center;
+    @media(max-width: 998px){
+      grid-template-columns: 1fr;
+    }
+
+
 
     .tabs{
       display: flex;
       flex-direction: column;
       align-content: center;
+
+      @media(max-width: 998px){
+        margin: 0 auto 25px;
+      }
 
 
       button{
@@ -65,7 +76,7 @@ export const Wrapper = styled.div`
 
 
     .content{
-      border: 2px dashed red;
+      // border: 2px dashed red;
     }
   }
 

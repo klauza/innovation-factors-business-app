@@ -11,3 +11,6 @@ export { default as iconplan } from './icon_plan.png'
 
 export { default as heroimgopt } from './hero_img_optimized.jpg'
 export { default as heroimg } from './hero_img.jpg'
+
+export { default as img1 } from './img-1-optimized.jpg'
+export { default as img2 } from './img-2-optimized.jpg'

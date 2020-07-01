@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import {Doughnut, Line} from 'react-chartjs-2';
 
+import List from '../List';
 
+// CSS
 const Wrapper = styled.div`
 width: 100%;
+padding: 5px;
   h1{
     font-size: 3em;
     color: ${props => props.theme.colors.primary};
@@ -13,11 +16,17 @@ width: 100%;
   .content-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    grid-gap: 2.5px;
+    @media(max-width: 998px){
+      grid-template-columns: 1fr;
+    }
     &__left{
       display: grid;
       grid-template-rows: 1fr 1fr;
+      border: 1px solid lightgrey;
+      border-radius: 2px;
 
+   
       .top-part{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -76,7 +85,8 @@ width: 100%;
       }
     }
     &__right{
-      
+      border: 1px solid lightgrey;
+      border-radius: 2px;
     }
   }
 
@@ -195,10 +205,12 @@ const InnovationCapacity = () => {
         </div>
       </div>
 
-      <h1>Spotlight</h1><span>ON LOWEST SCORES</span>
+      <h1 style={{marginTop: "100px"}}>Spotlight</h1><span>ON LOWEST SCORES</span>
       <p>To improve your innovation capacity focus on these:</p>
       <h2>Stage</h2>
+      <List />
       <h2>Groupset</h2>
+      <List />
     </Wrapper>
   )
 }
