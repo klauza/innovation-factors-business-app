@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { chart } from '../../../../media/Icons';
+// import { chart } from '../../../../media/Icons';
 
 const Wrapper = styled.div`
   h1{

@@ -154,9 +154,6 @@ const dataInnovationCapacity = 75;
 const dataParticipation = 80;
 
 const InnovationCapacity = () => {
-  console.log(data.datasets[0].data[0])
-  console.log(data.datasets[0].data[1])
-  console.log(data.datasets[0].data[2])
   return (
     <Wrapper 
       dataParticipation={dataParticipation}

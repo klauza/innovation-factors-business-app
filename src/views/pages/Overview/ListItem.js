@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { ProjectDiv } from './ListCSS';
 import { animated } from 'react-spring';
 import { Spring } from 'react-spring/renderprops'
@@ -28,7 +28,6 @@ const ListItem = ({ isToggled, project, id, toggle }) => {
 
 
 
-  console.log(isFactoryToggled)
   return (
     <ProjectDiv key={id} className="project project__container">
 
