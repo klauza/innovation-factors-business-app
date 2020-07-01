@@ -17,48 +17,42 @@ const List = () => {
     }
   }
 
-  const data = [
+  const cardElements = [
     {
       id: 0,
       icon: file,
       title: 'Internal Ideas',
-      score: "5.1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula congue nunc eget aliquet. Sed ut venenatis sapien. Cras ut lacus eget dolor commodo suscipit non in elit.",
+      score: "5.1"
     },
     {
       id: 1,
       icon: chart,
       title: 'External Ideas',
-      score: "5.1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula congue nunc eget aliquet. Sed ut venenatis sapien. Cras ut lacus eget dolor commodo suscipit non in elit.",
+      score: "5.1"
     },
     {
       id: 2,
       icon: settings,
       title: 'Synthesis',
-      score: "5.1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula congue nunc eget aliquet. Sed ut venenatis sapien. Cras ut lacus eget dolor commodo suscipit non in elit.",
+      score: "5.1"
     },
     {
       id: 3,
       icon: tab,
       title: 'Selection',
-      score: "5.1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula congue nunc eget aliquet. Sed ut venenatis sapien. Cras ut lacus eget dolor commodo suscipit non in elit.",
+      score: "5.1"
     },
     {
       id: 4,
       icon: file,
       title: 'Development',
-      score: "5.1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula congue nunc eget aliquet. Sed ut venenatis sapien. Cras ut lacus eget dolor commodo suscipit non in elit.",
+      score: "5.1"
     },
     {
       id: 5,
       icon: chart,
       title: 'Roll-out',
-      score: "5.1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula congue nunc eget aliquet. Sed ut venenatis sapien. Cras ut lacus eget dolor commodo suscipit non in elit.",
+      score: "5.1"
     }
   ]
 
@@ -66,7 +60,7 @@ const List = () => {
     <div style={{padding: '2.5px'}}>
 
       {
-        data.map((project, id) => { return (
+        cardElements.map((project, id) => { return (
             <ListItem 
               key={id}
               isToggled={isToggled} 

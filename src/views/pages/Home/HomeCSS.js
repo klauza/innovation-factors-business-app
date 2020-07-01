@@ -2,18 +2,14 @@ import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
   min-height: calc( 100vh - 60px);
-  // height: 100%;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   background: #fff;
   padding: 10px 5px;
 
-
-
   .hero-grid{
     height: 100%;
-    // height: calc( 100vh - 60px);
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -46,8 +42,6 @@ export const HeroContainer = styled.div`
 
   }
 
-
-
   @media ${props => props.theme.device.laptop}{
     height: 100%;
     .hero-grid{
@@ -75,21 +69,12 @@ export const HeroContainer = styled.div`
 `;
 
 
-
-
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
-  
-
   background: #fff;
-  // background: ${props => props.theme.colors.primary};
-  // background: transparent;
   transition: background .5s ease;
-  // button{
-  //   background: ${props => props.theme.colors.primary};
-  // }
 
   .hero-arrow{
     -webkit-touch-callout: none;
@@ -151,8 +136,6 @@ export const Wrapper = styled.div`
   }
   
 `;
-
-
 
 export const Section = styled.div`
   padding: 0 15px;

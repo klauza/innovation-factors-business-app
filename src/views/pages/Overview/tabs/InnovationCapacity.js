@@ -101,7 +101,7 @@ padding: 5px;
 `;
 
 
-const data = {
+const doughnutData = {
 	datasets: [{
 		data: [50, 25, 25],
 		backgroundColor: [
@@ -122,7 +122,8 @@ const data = {
 	],
 };
 
-const dataa = {
+
+const lineGraphData = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
@@ -178,7 +179,7 @@ const InnovationCapacity = () => {
           <div className="bottom-part">
             <span>NPS</span>
             <div className="bottom-part-flex">
-              <Doughnut data={data} />
+              <Doughnut data={doughnutData} />
               <div className="doughnut-desc">
                 <div>
                   <span>50%</span>
@@ -198,7 +199,7 @@ const InnovationCapacity = () => {
           
         </div>
         <div className="content-grid__right">
-          <div> <Line data={dataa} /></div>
+          <div> <Line data={lineGraphData} /></div>
         </div>
       </div>
 

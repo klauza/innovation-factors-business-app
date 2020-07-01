@@ -76,6 +76,8 @@ export const Wrapper = styled.div`
 
 
     .content{
+      overflow-x: hidden;
+      margin-bottom: 50px;
       // border: 2px dashed red;
     }
   }

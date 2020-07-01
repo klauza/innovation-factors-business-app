@@ -49,13 +49,11 @@ export const ProjectDiv = styled(animated.div)`
        
 
       }
+
       // MAIN BOT
       &-bot{
-        // display: grid; 
-        // grid-template-columns: 105px 105px 1fr;
         width: 100%;
         overflow: hidden;
-        // text-align: center;
         ul > div > li{
           margin-top: 15px;
           display: grid;
@@ -73,11 +71,7 @@ export const ProjectDiv = styled(animated.div)`
           padding: 25px 10px;
         }
 
-      
-        }
       }
     }
-
-    
   }
 `;

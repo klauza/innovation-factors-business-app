@@ -3,15 +3,21 @@ import styled from 'styled-components';
 // import { chart } from '../../../../media/Icons';
 
 const Wrapper = styled.div`
+overflow-x: hidden;
   h1{
     font-size: 3em;
     color: ${props => props.theme.colors.primary};
   }
 
   .groupsets-grid{
-    display: grid;
-    grid-template-columns: auto repeat(7, 1fr);
-    grid-auto-rows: 65px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    overflow-x: scroll;
+    @media ${props => props.theme.device.tablet}{
+      overflow-x: unset;
+    }
 
     .group-names > div,
     .innovation-capacity > div,
@@ -30,9 +36,17 @@ const Wrapper = styled.div`
       span{
         display: block;
       }
-
-
-   
+    }
+    .group-names,
+    .innovation-capacity,
+    .internal-ideas,
+    .external-ideas,
+    .selection,
+    .development,
+    .roll-out,
+    .synthesys{
+      display: flex;
+      flex-direction: column;
     }
 
     .group-names{
@@ -48,10 +62,6 @@ const Wrapper = styled.div`
         cursor: pointer;
         border-radius: 2px;
       }
-    }
-
-    .innovation-capacity{
-
     }
   }
 `;
