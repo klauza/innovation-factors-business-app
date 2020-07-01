@@ -10,6 +10,7 @@ overflow-x: hidden;
   }
 
   .groupsets-grid{
+    width: 100%;
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -47,6 +48,7 @@ overflow-x: hidden;
     .synthesys{
       display: flex;
       flex-direction: column;
+      min-width: 100px;
     }
 
     .group-names{

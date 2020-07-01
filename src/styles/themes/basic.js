@@ -1,6 +1,5 @@
 import { device } from '../device';
 
-
 export default {
   device,
   title: 'basic',
@@ -12,7 +11,5 @@ export default {
     background: '#fff',
     text: '#000'
   },
-  text: "Text",
   nav_font_family: 'Verdana'
-
 }
