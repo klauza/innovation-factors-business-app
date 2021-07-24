@@ -1,7 +1,7 @@
 import React from 'react';
 
 import history from './history';
-import { Router, Route,  Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Overview from './pages/Overview';
@@ -10,24 +10,20 @@ import Plans from './pages/Plans';
 import LogIn from './pages/LogIn';
 import NotFound from './pages/NotFound';
 
-
-
 // containers
 import Navigation from '../containers/Navigation';
 
-const Main = ( { toggleTheme }) => {
-
-
-
+const Main = ({ toggleTheme }) => {
   return (
-
-      <Router history={history}>
-
-        <Route render={({ location }) => (
-
+    <Router history={history}>
+      <Route
+        render={({ location }) => (
           <div className="views-container">
-            <Navigation toggleTheme={toggleTheme} location={location.pathname} />
-                  
+            <Navigation
+              toggleTheme={toggleTheme}
+              location={location.pathname}
+            />
+
             <div>
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
@@ -39,11 +35,10 @@ const Main = ( { toggleTheme }) => {
               </Switch>
             </div>
           </div>
-          
-        )}/>
+        )}
+      />
+    </Router>
+  );
+};
 
-      </Router>
-  )
-}
-
-export default Main
+export default Main;

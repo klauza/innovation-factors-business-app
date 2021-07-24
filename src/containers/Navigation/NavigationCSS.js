@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-
-  .nav-container{
+  .nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,81 +12,80 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     position: relative;
 
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       bottom: 0;
       width: 100%;
       height: 2px;
       border-radius: 10px;
-      background: ${props => props.theme.colors.primary};
+      background: ${(props) => props.theme.colors.primary};
     }
-    &__logo{  
+    &__logo {
       height: 55px;
 
-      img{
+      img {
         object-fit: cover;
         height: 100%;
         width: auto;
       }
     }
 
-    &__links{
+    &__links {
       display: flex;
       align-items: center;
 
       .nav-pc-links {
-        span{
+        span {
           display: flex;
           text-align: center;
           text-decoration: none;
         }
-        span > a{
+        span > a {
           text-decoration: none;
           color: grey;
         }
-      
-        & > a{
+
+        & > a {
           display: none;
           font-family: Verdana;
         }
 
-        .home-link{
+        .home-link {
           display: block;
           margin-right: 50px;
-          svg{
-            width: 25px; height: 25px;
+          svg {
+            width: 25px;
+            height: 25px;
           }
         }
       }
-      
 
-      button{
-        width: 35px; height: 35px;
+      button {
+        width: 35px;
+        height: 35px;
         outline: none;
         border: none;
         background: none;
         cursor: pointer;
 
-        svg{
-          width: 100%; height: 100%;
+        svg {
+          width: 100%;
+          height: 100%;
         }
-        &:hover svg{
+        &:hover svg {
           fill: grey;
         }
       }
 
-      a{
+      a {
         margin: 0 20px;
       }
     }
   }
 
-
-  @media ${props => props.theme.device.laptop}{
-
-    .nav-container{
-
+  @media ${(props) => props.theme.device.laptop} {
+    .nav-container {
       // &__logo{
 
       //   img{
@@ -95,17 +93,16 @@ export const Wrapper = styled.div`
       //   }
       // }
 
-      &__links{
-
-        .nav-pc-links{
-          a{
+      &__links {
+        .nav-pc-links {
+          a {
             text-decoration: none;
             display: flex;
             color: grey;
-            &.active{
+            &.active {
               color: #000;
             }
-            &:hover{
+            &:hover {
               color: #000;
             }
           }
@@ -113,14 +110,14 @@ export const Wrapper = styled.div`
           flex-direction: row;
           justify-items: space-between;
           align-items: center;
-          font-family: ${props => props.theme.colors.nav_font_family};
+          font-family: ${(props) => props.theme.colors.nav_font_family};
 
-          .home-link{
+          .home-link {
             margin-right: 25px;
           }
         }
-        
-        button{
+
+        button {
           display: none;
         }
 

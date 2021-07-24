@@ -5,11 +5,11 @@ export default {
   title: 'custom',
 
   colors: {
-    primary: '#1b75bb', 
-    secondary: "#21aae1", 
+    primary: '#1b75bb',
+    secondary: '#21aae1',
 
     background: '#fff',
-    text: '#000'
+    text: '#000',
   },
-  nav_font_family: 'Verdana'
-}
+  nav_font_family: 'Verdana',
+};

@@ -9,9 +9,9 @@ export default createGlobalStyle`
 
   body{
     background: #fff;
-    // background: ${props => props.theme.colors.background};
+    // background: ${(props) => props.theme.colors.background};
     font-size: 14px;
-    color: ${props => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.text};
     font-family: 'Titillium Web', sans-serif;
     transition: color .5s ease;
   }
@@ -75,10 +75,10 @@ export default createGlobalStyle`
     // min-height: 100vh;
     width: 100%;
     margin: 0 auto;
-    @media ${props => props.theme.device.tablet} {
+    @media ${(props) => props.theme.device.tablet} {
       padding: 0px;
     }
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       // left: 50px;
       // transform: translate(-25px);
       // width: calc(100% - 50px);

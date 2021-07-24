@@ -6,10 +6,10 @@ export default {
 
   colors: {
     primary: '#1b75bb', // blue
-    secondary: "#21aae1", // lightblue
+    secondary: '#21aae1', // lightblue
 
     background: '#fff',
-    text: '#000'
+    text: '#000',
   },
-  nav_font_family: 'Verdana'
-}
+  nav_font_family: 'Verdana',
+};
