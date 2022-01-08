@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { background2 } from '../media/Images';
 
 export default createGlobalStyle`
   * {
@@ -8,8 +9,18 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #fff;
-    // background: ${(props) => props.theme.colors.background};
+    /* background: url(${(props) => props.theme.background}); */
+    background-image: url(${background2});
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+
+    /* background: ${(props) =>
+      `url(${props.theme.background}) no-repeat top center`}; */
+
+
+    /* background: url(${(props) => props.theme.background}); */
+
     font-size: 14px;
     color: ${(props) => props.theme.colors.text};
     font-family: 'Titillium Web', sans-serif;
@@ -72,7 +83,8 @@ export default createGlobalStyle`
   .views-container{
     // position: relative;
     // left: 0px;
-    // min-height: 100vh;
+    // min-height: 100vh;    
+
     width: 100%;
     margin: 0 auto;
     @media ${(props) => props.theme.device.tablet} {
