@@ -3,20 +3,21 @@ import styled from 'styled-components';
 // import { chart } from '../../../../media/Icons';
 
 const Wrapper = styled.div`
-overflow-x: hidden;
-  h1{
+  overflow-x: hidden;
+  h1 {
     font-size: 3em;
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
 
-  .groupsets-grid{
+  .groupsets-grid {
+    background: white;
     width: 100%;
     padding: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
     overflow-x: scroll;
-    @media ${props => props.theme.device.tablet}{
+    @media ${(props) => props.theme.device.tablet} {
       overflow-x: unset;
     }
 
@@ -27,14 +28,14 @@ overflow-x: hidden;
     .selection > div,
     .development > div,
     .roll-out > div,
-    .synthesys > div{
+    .synthesys > div {
       padding: 5px;
       border: 1px solid lightgrey;
       font-weight: bold;
       height: 100%;
       text-align: center;
-      
-      span{
+
+      span {
         display: block;
       }
     }
@@ -45,18 +46,14 @@ overflow-x: hidden;
     .selection,
     .development,
     .roll-out,
-    .synthesys{
+    .synthesys {
       display: flex;
       flex-direction: column;
       min-width: 100px;
     }
 
-    .group-names{
-      &>nth-child(1){
-        border: 1px solid red;
-      }
-
-      button{
+    .group-names {
+      button {
         outline: none;
         border: none;
         background: #aaf0c9;
@@ -97,9 +94,9 @@ const Groupsets = () => {
           <div>
             <span>Innovation Capacity</span>
           </div>
-          <div style={{background: '#acdee3'}}>7.6</div>
-          <div style={{background: '#21aae1'}}>7.8</div>
-          <div style={{background: '#21aae1'}}>8.1</div>
+          <div style={{ background: '#acdee3' }}>7.6</div>
+          <div style={{ background: '#21aae1' }}>7.8</div>
+          <div style={{ background: '#21aae1' }}>8.1</div>
         </div>
 
         {/* 3 */}
@@ -107,9 +104,9 @@ const Groupsets = () => {
           <div>
             <span>Internal Ideas</span>
           </div>
-          <div style={{background: '#ef5b2a'}}>3.6</div>
-          <div style={{background: '#acdee3'}}>6.8</div>
-          <div style={{background: '#acdee3'}}>7.1</div>
+          <div style={{ background: '#ef5b2a' }}>3.6</div>
+          <div style={{ background: '#acdee3' }}>6.8</div>
+          <div style={{ background: '#acdee3' }}>7.1</div>
         </div>
 
         {/* 4 */}
@@ -117,9 +114,9 @@ const Groupsets = () => {
           <div>
             <span>External Ideas</span>
           </div>
-          <div style={{background: '#acdee3'}}>7.1</div>
-          <div style={{background: '#d4c711'}}>4.8</div>
-          <div style={{background: '#ef5b2a'}}>2.1</div>
+          <div style={{ background: '#acdee3' }}>7.1</div>
+          <div style={{ background: '#d4c711' }}>4.8</div>
+          <div style={{ background: '#ef5b2a' }}>2.1</div>
         </div>
 
         {/* 5 */}
@@ -127,9 +124,9 @@ const Groupsets = () => {
           <div>
             <span>Synthesys</span>
           </div>
-          <div style={{background: '#ef5b2a'}}>4.3</div>
-          <div style={{background: '#d4c711'}}>5.6</div>
-          <div style={{background: '#ef5b2a'}}>1.1</div>
+          <div style={{ background: '#ef5b2a' }}>4.3</div>
+          <div style={{ background: '#d4c711' }}>5.6</div>
+          <div style={{ background: '#ef5b2a' }}>1.1</div>
         </div>
 
         {/* 6 */}
@@ -137,9 +134,9 @@ const Groupsets = () => {
           <div>
             <span>Selection</span>
           </div>
-          <div style={{background: '#ef5b2a'}}>3.1</div>
-          <div style={{background: '#ef5b2a'}}>4.4</div>
-          <div style={{background: '#21aae1'}}>9.5</div>
+          <div style={{ background: '#ef5b2a' }}>3.1</div>
+          <div style={{ background: '#ef5b2a' }}>4.4</div>
+          <div style={{ background: '#21aae1' }}>9.5</div>
         </div>
 
         {/* 7 */}
@@ -147,9 +144,9 @@ const Groupsets = () => {
           <div>
             <span>Development</span>
           </div>
-          <div style={{background: '#acdee3'}}>7.6</div>
-          <div style={{background: '#acdee3'}}>7.8</div>
-          <div style={{background: '#acdee3'}}>8.1</div>
+          <div style={{ background: '#acdee3' }}>7.6</div>
+          <div style={{ background: '#acdee3' }}>7.8</div>
+          <div style={{ background: '#acdee3' }}>8.1</div>
         </div>
 
         {/* 8 */}
@@ -157,13 +154,13 @@ const Groupsets = () => {
           <div>
             <span>Roll Out</span>
           </div>
-          <div style={{background: '#ef5b2a'}}>2.2</div>
-          <div style={{background: '#21aae1'}}>8.4</div>
-          <div style={{background: '#acdee3'}}>6.2</div>
+          <div style={{ background: '#ef5b2a' }}>2.2</div>
+          <div style={{ background: '#21aae1' }}>8.4</div>
+          <div style={{ background: '#acdee3' }}>6.2</div>
         </div>
       </div>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Groupsets
+export default Groupsets;
