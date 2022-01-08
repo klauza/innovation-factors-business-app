@@ -7,13 +7,24 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-
+  html{
+      scroll-behavior: smooth;
+  }
   body{
+    min-height: 100vh;    
+    width: 100%;
+
+    background: url(${background2}) no-repeat center center fixed;
+
+
+    overflow-y: scroll;
+
     /* background: url(${(props) => props.theme.background}); */
-    background-image: url(${background2});
     /* background-repeat: no-repeat; */
-    background-position: center;
-    background-size: cover;
+    /* background-position: center; */
+    /* background-size: cover; */
+    
+
 
     /* background: ${(props) =>
       `url(${props.theme.background}) no-repeat top center`}; */
@@ -26,18 +37,11 @@ export default createGlobalStyle`
     font-family: 'Titillium Web', sans-serif;
     transition: color .5s ease;
   }
-  html{
-      scroll-behavior: smooth;
-    // height: 100%;
-  }
+
   body, #root{
     width: 100%; height: 100%;
-    // overflow-x: hidden;
   }
-  body{
-    // height: 100vh;
-    overflow-y: scroll;
-  }
+
   
 
   // mobile navigation modal
@@ -83,9 +87,8 @@ export default createGlobalStyle`
   .views-container{
     // position: relative;
     // left: 0px;
-    // min-height: 100vh;    
 
-    width: 100%;
+
     margin: 0 auto;
     @media ${(props) => props.theme.device.tablet} {
       padding: 0px;
