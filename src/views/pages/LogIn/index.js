@@ -51,7 +51,6 @@ const LogIn = () => {
       </Helmet>
 
       <Wrapper className="page">
-        <h1 className="login-title">Log In</h1>
         <LoginLayout />
       </Wrapper>
     </>

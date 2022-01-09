@@ -39,10 +39,20 @@ const Wrapper = styled.div`
         border: 1px solid black;
       }
 
-      button {
-        outline: none;
-        padding: 5px 20px;
-        cursor: pointer;
+      .contact-button {
+        button {
+          padding: 7px 12px;
+          cursor: pointer;
+          box-shadow: 0px 2px 6px -2px rgba(66, 68, 90, 1);
+          background: #1b75bb;
+          color: #fff;
+          outline: none;
+          border: 1px solid white;
+          border-radius: 3px;
+          &:hover {
+            box-shadow: 0px 2px 12px -1px rgba(66, 68, 90, 1);
+          }
+        }
       }
     }
   }
@@ -76,7 +86,9 @@ const LoginLayout = () => {
           <input placeholder="password" type="password" />
         </div>
         <div className="contact-column">
-          <button>Submit</button>
+          <div className="contact-button">
+            <button>Submit</button>
+          </div>
         </div>
       </div>
     </Wrapper>
