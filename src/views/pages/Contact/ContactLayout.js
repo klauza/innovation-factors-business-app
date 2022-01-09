@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { emailIco, phoneIco } from '../../../media/Icons';
 
 const Wrapper = styled.div`
   display: flex;
@@ -7,7 +8,7 @@ const Wrapper = styled.div`
 
   max-width: 1080px;
   margin: 0 auto;
-  padding-top: 60px;
+  /* padding-top: 30px; */
   padding-left: 2.5px;
   padding-right: 2.5px;
 
@@ -34,12 +35,36 @@ const Wrapper = styled.div`
     .contact-column {
       display: grid;
       grid-template-columns: 50px 200px;
+      grid-gap: 5px;
+      grid-template-rows: 50px;
       justify-content: center;
       margin: 20px 0;
+
+      /* &:hover {
+        box-shadow: 0px 2px 6px -1px rgba(66, 68, 90, 1);
+      } */
       div {
         /* padding: 20px 5px; */
         text-align: center;
-        border: 1px solid red;
+        border: 1px solid gray;
+      }
+      .contact-ico,
+      .contact-info {
+        display: grid;
+        box-shadow: 0px 2px 6px -1px rgba(66, 68, 90, 1);
+
+        span,
+        a,
+        img {
+          justify-self: center;
+          align-self: center;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -67,12 +92,24 @@ const ContactLayout = () => {
       </div>
       <div className="grid-bot">
         <div className="contact-column">
-          <div className="contact-ico">ico</div>
-          <div className="contact-info">tel number</div>
+          <div className="contact-ico">
+            <img src={phoneIco} />
+          </div>
+          <div className="contact-info">
+            <a href="mailto:innovation-technology@mail.net">
+              <span>666111666</span>
+            </a>
+          </div>
         </div>
         <div className="contact-column">
-          <div className="contact-ico">ico</div>
-          <div className="contact-info">email address</div>
+          <div className="contact-ico">
+            <img src={emailIco} />
+          </div>
+          <div className="contact-info">
+            <a href="mailto:innovation-technology@mail.net">
+              <span>in-fac@mail.net</span>
+            </a>
+          </div>
         </div>
       </div>
     </Wrapper>
