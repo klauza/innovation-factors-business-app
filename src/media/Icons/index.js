@@ -1,11 +1,14 @@
-export { default as HomeIcon } from './Home'
-export { default as CircleIcon } from './Circle'
+export { default as HomeIcon } from './Home';
+export { default as CircleIcon } from './Circle';
 
 // PNG
-export { default as file } from './file.png'
-export { default as chart } from './chart.png'
-export { default as settings } from './settings.png'
-export { default as tab } from './tab.png'
+export { default as file } from './file.png';
+export { default as chart } from './chart.png';
+export { default as settings } from './settings.png';
+export { default as tab } from './tab.png';
 
-export { default as like } from './like.png'
-export { default as dislike } from './dislike.png'
+export { default as emailIco } from './email-ico.png';
+export { default as phoneIco } from './phone-ico.png';
+
+export { default as like } from './like.png';
+export { default as dislike } from './dislike.png';

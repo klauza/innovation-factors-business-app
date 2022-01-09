@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound';
 
 // containers
 import Navigation from '../containers/Navigation';
+import Footer from '../containers/Footer';
 
 const Main = ({ toggleTheme }) => {
   return (
@@ -34,6 +35,7 @@ const Main = ({ toggleTheme }) => {
                 <Route component={NotFound} />
               </Switch>
             </div>
+            <Footer />
           </div>
         )}
       />

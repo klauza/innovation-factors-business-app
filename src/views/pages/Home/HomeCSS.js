@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
-  min-height: calc( 100vh - 60px);
+  min-height: calc(100vh - 60px);
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background: #fff;
+  /* background: #fff; */
   padding: 10px 5px;
 
-  .hero-grid{
+  .hero-grid {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -16,43 +16,43 @@ export const HeroContainer = styled.div`
     align-self: center;
     padding: 0 10px;
 
-    &__left{
+    &__left {
       max-width: 500px;
       margin: 50px auto;
-      h1{
-        color: ${props => props.theme.colors.primary};
+      h1 {
+        color: ${(props) => props.theme.colors.primary};
         text-align: center;
       }
-      p{
+      p {
         text-align: center;
         color: grey;
         font-size: 2em;
       }
     }
 
-    &__right{
+    &__right {
       margin: 0 auto;
       max-width: 500px;
       height: 100%;
-      img{
-        width: 100%; height: auto;
+      img {
+        width: 100%;
+        height: auto;
         object-fit: cover;
       }
     }
-
   }
 
-  @media ${props => props.theme.device.laptop}{
+  @media ${(props) => props.theme.device.laptop} {
     height: 100%;
-    .hero-grid{
+    .hero-grid {
       grid-template-columns: 1fr 1fr;
-      height: calc( 100vh - 60px);
-      &__left{
+      height: calc(100vh - 60px);
+      &__left {
         margin: 0;
-        h1{
+        h1 {
           text-align: left;
         }
-        p{
+        p {
           text-align: left;
           margin-top: 15px;
           color: grey;
@@ -60,7 +60,7 @@ export const HeroContainer = styled.div`
         }
       }
 
-      &__right{
+      &__right {
         max-width: unset;
         height: unset;
       }
@@ -68,15 +68,14 @@ export const HeroContainer = styled.div`
   }
 `;
 
-
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
-  background: #fff;
-  transition: background .5s ease;
+  /* background: #fff; */
+  transition: background 0.5s ease;
 
-  .hero-arrow{
+  .hero-arrow {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -84,57 +83,67 @@ export const Wrapper = styled.div`
     -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-    
+
     margin: 0px auto 75px;
     border: 0;
     background: none;
     outline: none;
-    width: 30px; height: 50px;
+    width: 30px;
+    height: 50px;
     display: block;
     cursor: pointer;
 
-    svg{
-      width: 100%; height: 100%;
-      &:nth-child(2){
+    svg {
+      width: 100%;
+      height: 100%;
+      &:nth-child(2) {
         margin-top: -30px;
       }
     }
 
-    &:hover svg{
+    &:hover svg {
       fill: grey;
     }
   }
 
-  .insight{
+  .insight {
     scroll-snap-align: start;
     max-width: 500px;
     margin: 50px auto 200px;
-    h1{
-      color: ${props => props.theme.colors.primary};
+    h1 {
+      color: ${(props) => props.theme.colors.primary};
       text-align: center;
     }
-    p{
+    p {
       text-align: center;
       color: grey;
       font-size: 2em;
     }
   }
 
-  .sections{
+  .sections {
     max-width: 1440px;
     margin: 0 auto 125px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 
-    @media ${props => props.theme.device.mobileL}{
+    @media ${(props) => props.theme.device.mobileL} {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media ${props => props.theme.device.laptop}{
+    @media ${(props) => props.theme.device.laptop} {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  
+
+  a {
+    text-decoration: none;
+    transition: background-color 250ms ease;
+    &:hover {
+      background: #d1ebff;
+      transition: background-color 250ms ease;
+    }
+  }
 `;
 
 export const Section = styled.div`
@@ -146,20 +155,22 @@ export const Section = styled.div`
   margin: 60px auto 0;
   max-width: 500px;
 
-  .section-image{
-    width: 125px; height: 125px;
+  .section-image {
+    width: 125px;
+    height: 125px;
 
-    img{
-    width:100%; height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
   }
 
-  .section-title{
+  .section-title {
     text-align: center;
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
-  .section-desc{
+  .section-desc {
     color: grey;
     font-size: 1.25em;
     text-align: center;

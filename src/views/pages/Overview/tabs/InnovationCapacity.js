@@ -1,82 +1,84 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Doughnut, Line} from 'react-chartjs-2';
+import { Doughnut, Line } from 'react-chartjs-2';
 
 import List from '../List';
 
 // CSS
 const Wrapper = styled.div`
-width: 100%;
-padding: 5px;
-  h1{
+  width: 100%;
+  padding: 5px;
+  h1 {
     font-size: 3em;
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
 
-  .content-grid{
+  .content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2.5px;
-    @media(max-width: 998px){
+    @media (max-width: 998px) {
       grid-template-columns: 1fr;
     }
-    &__left{
+    &__left {
       display: grid;
       grid-template-rows: 1fr 1fr;
       border: 1px solid lightgrey;
       border-radius: 2px;
 
-   
-      .top-part{
+      .top-part {
+        background: #fff;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
 
-        .innovation-capacity{
+        .innovation-capacity {
           padding: 2.5px;
-          &>div{
+          & > div {
             width: 100%;
             height: 25px;
             background: black;
             position: relative;
-            .dataInnovationCapacity{
+            .dataInnovationCapacity {
               position: absolute;
-              width: ${props => props.dataInnovationCapacity}%;
+              width: ${(props) => props.dataInnovationCapacity}%;
               height: 100%;
               background: red;
             }
           }
-          span{
+          span {
             text-align: center;
             display: block;
             font-size: 1.5em;
           }
         }
 
-        .participation{
+        .participation {
           text-align: center;
           display: block;
-          span, div{
+          span,
+          div {
             font-size: 1.5em;
           }
         }
       }
-      .bottom-part{
-
-        span{
+      .bottom-part {
+        background: #fff;
+        span {
           text-align: center;
           display: block;
           font-size: 1.5em;
-          color: ${props => props.theme.colors.primary};
+          color: ${(props) => props.theme.colors.primary};
         }
-        &-flex{
+        &-flex {
           display: flex;
           flex-direction: column;
 
-          .doughnut-desc{
-            display: flex; flex-direction: row;
+          .doughnut-desc {
+            display: flex;
+            flex-direction: row;
             justify-content: space-between;
-            span{
+            span {
               text-align: center;
               display: block;
             }
@@ -84,50 +86,38 @@ padding: 5px;
         }
       }
     }
-    &__right{
+    &__right {
+      background: #fff;
       border: 1px solid lightgrey;
       border-radius: 2px;
     }
   }
 
-
-
-  h1:nth-of-type(2), span{
+  h1:nth-of-type(2),
+  span {
     display: inline-block;
   }
-  span{
-    color: ${props => props.theme.colors.primary};
+  span {
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
 
-
 const doughnutData = {
-	datasets: [{
-		data: [50, 25, 25],
-		backgroundColor: [
-		'#FF6384',
-		'#36A2EB',
-		'#FFCE56'
-		],
-		hoverBackgroundColor: [
-		'#FF6384',
-		'#36A2EB',
-		'#FFCE56'
-		]
-	}],
-	labels: [
-		'Promoter',
-		'Passive',
-		'Detractor'
-	],
+  datasets: [
+    {
+      data: [50, 25, 25],
+      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+      hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+    },
+  ],
+  labels: ['Promoter', 'Passive', 'Detractor'],
 };
-
 
 const lineGraphData = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
-      label: "Innovation Capacity Over time",
+      label: 'Innovation Capacity Over time',
       fill: false,
       lineTension: 0.1,
       backgroundColor: 'rgba(75,192,192,0.4)',
@@ -145,9 +135,9 @@ const lineGraphData = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [65, 59, 80, 81, 56, 55, 40]
-    }
-  ]
+      data: [65, 59, 80, 81, 56, 55, 40],
+    },
+  ],
 };
 
 const dataInnovationCapacity = 75;
@@ -156,19 +146,20 @@ const dataParticipation = 80;
 
 const InnovationCapacity = () => {
   return (
-    <Wrapper 
+    <Wrapper
       dataParticipation={dataParticipation}
       dataInnovationCapacity={dataInnovationCapacity}
     >
       <h1>Overview</h1>
       <div className="content-grid">
         <div className="content-grid__left">
-
           <div className="top-part">
             <div className="innovation-capacity">
               <span>INNOVATION CAPACITY</span>
-              <div><div className="dataInnovationCapacity" /></div>
-              <span>{dataInnovationCapacity/10}</span>
+              <div>
+                <div className="dataInnovationCapacity" />
+              </div>
+              <span>{dataInnovationCapacity / 10}</span>
             </div>
             <div className="participation">
               <span>PARTICIPATION</span>
@@ -196,21 +187,24 @@ const InnovationCapacity = () => {
               </div>
             </div>
           </div>
-          
         </div>
         <div className="content-grid__right">
-          <div> <Line data={lineGraphData} /></div>
+          <div>
+            {' '}
+            <Line data={lineGraphData} />
+          </div>
         </div>
       </div>
 
-      <h1 style={{marginTop: "100px"}}>Spotlight</h1><span>ON LOWEST SCORES</span>
+      <h1 style={{ marginTop: '100px' }}>Spotlight</h1>
+      <span>ON LOWEST SCORES</span>
       <p>To improve your innovation capacity focus on these:</p>
       <h2>Stage</h2>
       <List />
       <h2>Groupset</h2>
       <List />
     </Wrapper>
-  )
-}
+  );
+};
 
-export default InnovationCapacity
+export default InnovationCapacity;
