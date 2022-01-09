@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 
   max-width: 1080px;
   margin: 0 auto;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   padding-left: 2.5px;
   padding-right: 2.5px;
 
@@ -40,6 +40,22 @@ const Wrapper = styled.div`
       div {
         padding: 20px 5px;
         text-align: center;
+      }
+
+      .plan-btn {
+        button {
+          padding: 7px 12px;
+          cursor: pointer;
+          box-shadow: 0px 2px 6px -2px rgba(66, 68, 90, 1);
+          background: #1b75bb;
+          color: #fff;
+          outline: none;
+          border: 1px solid white;
+          border-radius: 3px;
+          &:hover {
+            box-shadow: 0px 2px 12px -1px rgba(66, 68, 90, 1);
+          }
+        }
       }
     }
 
@@ -76,18 +92,27 @@ const PlansLayout = () => {
           <div className="plan-number">1</div>
           <div className="plan-duration">1 week</div>
           <div className="plan-price">9,99</div>
+          <div className="plan-btn">
+            <button>Buy now</button>
+          </div>
         </div>
         <div className="plan-column">
           <div className="plan-name">Extended</div>
           <div className="plan-number">2</div>
           <div className="plan-duration">1 month</div>
           <div className="plan-price">19,99</div>
+          <div className="plan-btn">
+            <button>Buy now</button>
+          </div>
         </div>
         <div className="plan-column">
           <div className="plan-name">Pro</div>
           <div className="plan-number">3</div>
           <div className="plan-duration">12 months</div>
           <div className="plan-price">49,99</div>
+          <div className="plan-btn">
+            <button>Buy now</button>
+          </div>
         </div>
       </div>
     </Wrapper>

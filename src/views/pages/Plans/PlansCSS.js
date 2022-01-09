@@ -13,7 +13,8 @@ export const Wrapper = styled.div`
   margin: 0 auto 0;
   max-width: 500px;
   padding: 0 10px;
-  padding-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   .section-image {
     width: 125px;
