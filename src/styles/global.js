@@ -11,6 +11,8 @@ export default createGlobalStyle`
       scroll-behavior: smooth;
   }
   body{
+
+
     min-height: 100vh;    
     width: 100%;
 
@@ -87,7 +89,9 @@ export default createGlobalStyle`
   .views-container{
     // position: relative;
     // left: 0px;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
     margin: 0 auto;
     @media ${(props) => props.theme.device.tablet} {
