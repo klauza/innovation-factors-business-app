@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   .grid-top {
     width: 50%;
     margin: 0 auto;
-    border: 1px solid #000;
+    border: 1px solid lightgrey;
     border-bottom: unset;
     background: #ededed;
     h1 {
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   }
   .grid-bot {
     background: #fff;
-    border: 1px solid #000;
+    border: 1px solid grey;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
@@ -60,8 +60,8 @@ const Wrapper = styled.div`
     }
 
     & > div:nth-child(2) {
-      border-left: 1px solid #000;
-      border-right: 1px solid #000;
+      border-left: 1px solid grey;
+      border-right: 1px solid grey;
     }
   }
 
