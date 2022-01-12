@@ -1,6 +1,6 @@
 # About project
 
-**This project is a showcase of your idea. A web presentation of your business is the key factor of your success.**
+**It is a lightweight and simple website. This project is a showcase of your idea. A web presentation of your business is the key factor of your success.**
 
 [website link](https://innovation-factors-business-app.netlify.app/)
 
