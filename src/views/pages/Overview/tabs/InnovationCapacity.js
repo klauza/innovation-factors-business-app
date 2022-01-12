@@ -32,6 +32,18 @@ const Wrapper = styled.div`
         grid-template-columns: 1fr 1fr;
         align-items: center;
 
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          right: 50%;
+          transform: translateX(50%);
+          width: 1px;
+          height: 100%;
+          background: lightgray;
+        }
+
         .innovation-capacity {
           padding: 2.5px;
           & > div {

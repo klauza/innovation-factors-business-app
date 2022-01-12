@@ -17,11 +17,14 @@ const Wrapper = styled.div`
   .grid-top {
     width: 50%;
     margin: 0 auto;
-    border: 1px solid #000;
+    border: 1px solid lightgrey;
     border-bottom: unset;
     background: #ededed;
     h1 {
       text-align: center;
+      @media (max-width: 998px) {
+        font-size: 5vw;
+      }
     }
   }
   .grid-bot {
@@ -29,7 +32,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
 
-    border: 1px solid #000;
+    border: 1px solid grey;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     .contact-column {
@@ -96,8 +99,8 @@ const ContactLayout = () => {
             <img src={phoneIco} />
           </div>
           <div className="contact-info">
-            <a href="mailto:innovation-technology@mail.net">
-              <span>666111666</span>
+            <a href="tel:666111666">
+              <span>066111666</span>
             </a>
           </div>
         </div>

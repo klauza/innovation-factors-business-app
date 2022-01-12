@@ -16,11 +16,14 @@ const Wrapper = styled.div`
   .grid-top {
     width: 50%;
     margin: 0 auto;
-    border: 1px solid #000;
+    border: 1px solid lightgrey;
     border-bottom: unset;
     background: #ededed;
     h1 {
       text-align: center;
+      @media (max-width: 998px) {
+        font-size: 5vw;
+      }
     }
   }
   .grid-bot {
@@ -28,7 +31,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
 
-    border: 1px solid #000;
+    border: 1px solid grey;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     .contact-column {
@@ -36,7 +39,7 @@ const Wrapper = styled.div`
       input {
         padding: 5px;
         border-radius: 0;
-        border: 1px solid black;
+        border: 1px solid grey;
       }
 
       .contact-button {
